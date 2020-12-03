@@ -23,6 +23,8 @@ module.exports = function(environment) {
     }
   };
 
+
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -41,6 +43,10 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
+
+    ENV['ember-class-names-builder'] = {
+      separators: ['__', '_']
+    }
   }
 
   if (environment === 'production') {
