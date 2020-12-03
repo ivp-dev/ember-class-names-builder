@@ -1,8 +1,7 @@
 ember-class-names-builder
 ==============================================================================
 
-[Short description of the addon.]
-
+Helper for building class names.
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -22,9 +21,42 @@ ember install ember-class-names-builder
 
 Usage
 ------------------------------------------------------------------------------
+By default it use BEM naming convention.
+```
+<div class={{bem 'block'}} ... // => <div class="block" ...
 
-[Longer description of how to use the addon in apps.]
+<div class={{bem 'block' '$modifier'}} ... // => <div class="block block_modifier" ...
 
+<div class={{bem 'block' (hash $modifier=true) }} ... // => <div class="block block_modifier" ...
+
+<div class={{bem 'block' (hash $modifier=true) }} ... // => <div class="block block_modifier" ...
+
+<div class={{bem (bem 'block') 'element' (hash $modifier=true) }} ... // => <div class="block__element block__element_modifier" ...
+
+```
+
+It can be overridden in app environment.
+You can set another class name part separators:
+
+```
+ENV['class-names-builder']: {
+  separators: '-' | ['__', '--'] // it can be string or array of string
+}
+```
+The result will be:
+
+```
+<div class={{bem (bem 'block') 'element' (hash $modifier=true) }} ... // in case of '-' => <div class="block-element block-element-modifier" ...
+<div class={{bem (bem 'block') 'element' (hash $modifier=true) }} ... // in case of [__, '--'] => <div class="block__element block__element--modifier" ...
+```
+
+You can override prefix as well. 
+
+```
+ENV['class-names-builder']: {
+  prefixes: ['_', '-', '$'] // these prefixes used by default 
+}
+```
 
 Contributing
 ------------------------------------------------------------------------------
