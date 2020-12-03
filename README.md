@@ -50,7 +50,7 @@ The result will be:
 <div class={{bem (bem 'block') 'element' (hash $modifier=true) }} ... // in case of [__, '--'] => <div class="block__element block__element--modifier" ...
 ```
 
-You can override prefix as well. 
+You can override modifier prefix as well. 
 
 ```
 ENV['class-names-builder']: {
