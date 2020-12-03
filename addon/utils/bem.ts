@@ -1,5 +1,3 @@
-//original source-code https://github.com/romeobravo/bem-classes
-
 import { assert } from '@ember/debug';
 import config from 'ember-get-config';
 

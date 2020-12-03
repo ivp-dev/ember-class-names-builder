@@ -5,7 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/ivp-dev/ember-class-names-builder.git",
   "license": "MIT",
   "author": "",
   "directories": {
