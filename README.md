@@ -54,7 +54,7 @@ You can override prefix as well.
 
 ```
 ENV['class-names-builder']: {
-  prefixes: ['_', '-', '$'] // these prefixes used by default 
+  prefixes: ['_', '-', '$'] // these prefixes are used by default 
 }
 ```
 
