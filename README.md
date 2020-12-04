@@ -53,7 +53,7 @@ The result will be:
 You can override modifier prefix as well. 
 
 ```
-ENV['class-names-builder']: {
+ENV['ember-class-names-builder']: {
   prefixes: ['_', '-', '$'] // these prefixes are used by default 
 }
 ```
