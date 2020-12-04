@@ -39,7 +39,7 @@ It can be overridden in app environment.
 You can set another class name part separators:
 
 ```
-ENV['class-names-builder']: {
+ENV['ember-class-names-builder']: {
   separators: '-' | ['__', '--'] // it can be string or array of string
 }
 ```
