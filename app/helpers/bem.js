@@ -1,1 +1,1 @@
-export { default, bem } from 'ember-class-names-builder/helpers/bem';
+export { default } from 'ember-class-names-builder/helpers/bem';

@@ -1,6 +1,8 @@
-import bem, { getPrefixes, getSeparators } from 'ember-class-names-builder/utils/bem';
+import bem from 'ember-class-names-builder/utils/bem';
+import { getPrefixes, getSeparators } from 'ember-class-names-builder/classes/-internal/constants';
 import { module, test } from 'qunit';
 import ENV from 'dummy/config/environment';
+
 
 const separators = getSeparators(ENV['ember-class-names-builder']);
 const prefixes = getPrefixes(ENV['ember-class-names-builder']);

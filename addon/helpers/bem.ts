@@ -1,7 +1,8 @@
 import { helper } from '@ember/component/helper';
-import bem, { ClassNamesBuilder } from 'ember-class-names-builder/utils/bem';
+import bem from '../utils/bem';
+import ClassNamesBuilder from "../classes/class-names-builder";
 
-export function bemBuilder(
+function bemBuilder(
   params: Array<string | ClassNamesBuilder | object>
 ) {
   if (typeof params[0] === 'string') {

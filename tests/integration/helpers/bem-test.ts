@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { getPrefixes, getSeparators } from 'ember-class-names-builder/utils/bem';
+import { getPrefixes, getSeparators } from 'ember-class-names-builder/classes/-internal/constants';
 import ENV from 'dummy/config/environment';
 
 const separators = getSeparators(ENV['ember-class-names-builder']);

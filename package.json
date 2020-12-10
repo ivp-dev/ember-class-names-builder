@@ -1,6 +1,6 @@
 {
   "name": "ember-class-names-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper for building class names.",
   "keywords": [
     "ember-addon"
@@ -25,10 +25,10 @@
     "postpack": "ember ts:clean"
   },
   "dependencies": {
-    "ember-get-config": "^0.3.0",
     "ember-cli-babel": "^7.22.1",
     "ember-cli-htmlbars": "^5.3.1",
-    "ember-cli-typescript": "^4.0.0"
+    "ember-cli-typescript": "^4.0.0",
+    "ember-get-config": "^0.3.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
