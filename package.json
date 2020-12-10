@@ -1,6 +1,6 @@
 {
   "name": "ember-class-names-builder",
-  "version": "1.1.0",
+  "version": "1.0.10",
   "description": "Helper for building class names.",
   "keywords": [
     "ember-addon"

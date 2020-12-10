@@ -1,6 +1,5 @@
 import { helper } from '@ember/component/helper';
-import bem from '../utils/bem';
-import ClassNamesBuilder from "../classes/class-names-builder";
+import bem, { ClassNamesBuilder } from '../utils/bem';
 
 function bemBuilder(
   params: Array<string | ClassNamesBuilder | object>
