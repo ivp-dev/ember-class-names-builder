@@ -14,7 +14,7 @@ function bemBuilder(
     return params[0](params[1], ...params.slice(2));
   }
 
-  throw 'First parameter should be string or object'
+  throw 'First parameter should be a string or an object'
 }
 
 export default helper(bemBuilder);

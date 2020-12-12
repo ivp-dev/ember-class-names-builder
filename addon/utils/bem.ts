@@ -112,7 +112,7 @@ function optionFactory(
   option: unknown,
   separator: string
 ): BaseOption {
-  if (option !== null && typeof option === 'object') {
+  if (option && typeof option === 'object') {
     return new ObjectOption(base, option as object, separator);
   }
 
